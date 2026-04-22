@@ -30,10 +30,10 @@ export function Footer() {
       <div className="h-0.5 w-full bg-gradient-to-r from-[#4F46E5] via-[#8B5CF6] to-[#4F46E5]" />
 
       <div className="container mx-auto px-4 py-8 lg:py-10 relative z-10">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-8">
 
           {/* Brand */}
-          <div className="col-span-2 lg:col-span-1 space-y-3">
+          <div className="sm:col-span-2 lg:col-span-1 space-y-3">
             <Link href="/" className="flex items-center gap-2.5 group w-fit">
               <img
                 src="/Logo.jpeg"
@@ -45,7 +45,7 @@ export function Footer() {
                 <span className="text-xs font-medium text-[#A78BFA] tracking-widest uppercase">Group</span>
               </div>
             </Link>
-            <p className="text-white/60 text-sm leading-relaxed max-w-[220px]">
+            <p className="text-white/60 text-sm leading-relaxed max-w-[280px]">
               Quality construction & handyman services across Scarborough & the GTA. Licensed & insured.
             </p>
             <div className="flex items-center gap-2">
@@ -70,40 +70,43 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Quick Links */}
-          <div>
-            <h4 className="text-xs font-bold uppercase tracking-widest text-[#A78BFA] mb-3">Navigate</h4>
-            <ul className="space-y-1.5">
-              {quickLinks.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="group flex items-center gap-1 text-white/60 hover:text-white text-xs transition-colors"
-                  >
-                    <ArrowRight className="w-3 h-3 opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200 text-[#A78BFA]" />
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+          {/* Quick Links + Services side by side on mobile */}
+          <div className="grid grid-cols-2 sm:grid-cols-1 lg:grid-cols-1 gap-8 sm:gap-0 sm:col-span-1">
+            <div>
+              <h4 className="text-xs font-bold uppercase tracking-widest text-[#A78BFA] mb-3">Navigate</h4>
+              <ul className="space-y-1.5">
+                {quickLinks.map((link) => (
+                  <li key={link.href}>
+                    <Link
+                      href={link.href}
+                      className="group flex items-center gap-1 text-white/60 hover:text-white text-xs transition-colors"
+                    >
+                      <ArrowRight className="w-3 h-3 opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200 text-[#A78BFA]" />
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
 
-          {/* Services */}
-          <div>
-            <h4 className="text-xs font-bold uppercase tracking-widest text-[#A78BFA] mb-3">Services</h4>
-            <ul className="space-y-1.5">
-              {services.map((s) => (
-                <li key={s.href}>
-                  <Link
-                    href={s.href}
-                    className="group flex items-center gap-1 text-white/60 hover:text-white text-xs transition-colors"
-                  >
-                    <ArrowRight className="w-3 h-3 opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200 text-[#A78BFA]" />
-                    {s.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+          <div className="grid grid-cols-1 gap-0 sm:col-span-1">
+            <div>
+              <h4 className="text-xs font-bold uppercase tracking-widest text-[#A78BFA] mb-3">Services</h4>
+              <ul className="space-y-1.5">
+                {services.map((s) => (
+                  <li key={s.href}>
+                    <Link
+                      href={s.href}
+                      className="group flex items-center gap-1 text-white/60 hover:text-white text-xs transition-colors"
+                    >
+                      <ArrowRight className="w-3 h-3 opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200 text-[#A78BFA]" />
+                      {s.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
 
           {/* Contact */}

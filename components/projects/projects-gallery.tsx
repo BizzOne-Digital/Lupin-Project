@@ -67,7 +67,7 @@ const projects = [
     title: "Custom Built-In Shelving",
     category: "Custom",
     description: "Floor-to-ceiling custom library shelving",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1594620302200-9a762244a156?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
     location: "Scarborough, ON",
   },
   {

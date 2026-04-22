@@ -45,7 +45,6 @@ export function Navbar() {
                 alt="Lupin Project Group"
                 className="h-12 lg:h-14 w-auto object-contain rounded-lg transition-transform duration-300 group-hover:scale-105"
               />
-              <span className="absolute -top-1 -right-1 w-2.5 h-2.5 bg-[#8B5CF6] rounded-full border-2 border-card" />
             </div>
             <div className="flex flex-col leading-none">
               <span className="font-extrabold text-lg lg:text-xl text-foreground tracking-tight">Lupin Project</span>
