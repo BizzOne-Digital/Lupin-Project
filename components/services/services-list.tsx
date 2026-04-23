@@ -27,7 +27,7 @@ const services = [
     icon: Wrench,
     title: "Handyman Services",
     description: "Reliable handyman services for all your repair, installation, and maintenance needs. From small fixes to larger projects, we provide skilled workmanship and prompt service for residential and commercial properties.",
-    image: "/Handyman services.jpg",
+    image: "/Handyman.jpg",
     category: "handyman",
     features: [
       "General repairs & maintenance",
@@ -155,7 +155,9 @@ export function ServicesList() {
                 <img
                   src={service.image}
                   alt={service.title}
-                  className="w-full h-[300px] lg:h-[400px] object-cover group-hover:scale-105 transition-transform duration-500"
+                  className={`w-full h-[300px] lg:h-[400px] object-cover group-hover:scale-105 transition-transform duration-500 ${
+                    service.id === "handyman" ? "object-top" : "object-center"
+                  }`}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-foreground/40 to-transparent" />
                 <div className="absolute bottom-6 left-6">

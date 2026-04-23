@@ -19,7 +19,7 @@ const services = [
     icon: Wrench,
     title: "Handyman Services",
     description: "Quick, reliable repairs and maintenance for your home or business. From minor fixes to installations, we handle all your day-to-day property needs.",
-    image: "/Handyman services.jpg",
+    image: "/Handyman.jpg",
     category: "handyman",
   },
   {
@@ -132,7 +132,9 @@ export function ServicesSection() {
                 <img
                   src={service.image}
                   alt={service.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  className={`w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ${
+                    service.id === "handyman" ? "object-top" : "object-center"
+                  }`}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 to-transparent" />
                 <div className="absolute bottom-4 left-4">
