@@ -27,7 +27,7 @@ const services = [
     icon: Wrench,
     title: "Handyman Services",
     description: "Reliable handyman services for all your repair, installation, and maintenance needs. From small fixes to larger projects, we provide skilled workmanship and prompt service for residential and commercial properties.",
-    image: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
     category: "handyman",
     features: [
       "General repairs & maintenance",

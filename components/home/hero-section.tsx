@@ -43,7 +43,7 @@ export function HeroSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="mt-4 sm:mt-6 text-base sm:text-lg md:text-xl text-white/95 leading-relaxed"
           >
-            From quick repairs to major construction projects, Lupin Project Group delivers exceptional craftsmanship and reliable service throughout Scarborough and the GTA. Licensed, insured, and committed to your satisfaction.
+            From quick repairs to major construction projects, Lupin Project Group delivers exceptional craftsmanship and reliable service throughout The GTA. Licensed, insured, and committed to your satisfaction.
           </motion.p>
 
           {/* CTA Buttons */}
