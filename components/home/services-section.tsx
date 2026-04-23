@@ -19,7 +19,7 @@ const services = [
     icon: Wrench,
     title: "Handyman Services",
     description: "Quick, reliable repairs and maintenance for your home or business. From minor fixes to installations, we handle all your day-to-day property needs.",
-    image: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    image: "/Handyman services.jpg",
     category: "handyman",
   },
   {
