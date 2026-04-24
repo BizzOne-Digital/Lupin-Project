@@ -46,7 +46,7 @@ export function Footer() {
               </div>
             </Link>
             <p className="text-white/60 text-sm leading-relaxed max-w-[280px]">
-              Quality construction & handyman services across Scarborough & the GTA. Licensed & insured.
+              Quality construction & handyman services across the GTA. Licensed & insured.
             </p>
             <div className="flex items-center gap-2">
               <Link
