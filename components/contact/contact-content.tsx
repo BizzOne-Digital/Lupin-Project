@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { motion } from "framer-motion"
-import { Phone, MapPin, Clock, Send, CheckCircle } from "lucide-react"
+import { Phone, Mail, MapPin, Clock, Send, CheckCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 
@@ -12,6 +12,12 @@ const contactInfo = [
     title: "Phone",
     content: "905-233-2100",
     href: "tel:905-233-2100",
+  },
+  {
+    icon: Mail,
+    title: "Email",
+    content: "lupinprojectgroup@gmail.com",
+    href: "mailto:lupinprojectgroup@gmail.com",
   },
   {
     icon: MapPin,
@@ -51,19 +57,17 @@ export function ContactContent() {
     e.preventDefault()
     setIsSubmitting(true)
 
-    // Format message for SMS/WhatsApp
-    const smsMessage = `New Quote Request:\nName: ${formData.name}\nPhone: ${formData.phone}\nService: ${formData.service}\nMessage: ${formData.message}`
-    
-    // Send via SMS (opens default SMS app)
-    const phoneNumber = "9052332100" // Remove dashes for SMS
-    const smsUrl = `sms:${phoneNumber}?body=${encodeURIComponent(smsMessage)}`
-    
-    // Open SMS app
-    window.open(smsUrl, '_blank')
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    })
 
     setIsSubmitting(false)
-    setIsSubmitted(true)
-    setFormData({ name: "", phone: "", service: "", message: "" })
+    if (res.ok) {
+      setIsSubmitted(true)
+      setFormData({ name: "", phone: "", service: "", message: "" })
+    }
   }
 
   const handleChange = (
@@ -172,7 +176,7 @@ export function ContactContent() {
                     Thank You!
                   </h3>
                   <p className="text-muted-foreground">
-                    Your message has been prepared. Please send the SMS to complete your request.
+                    Your message has been sent. We'll get back to you within 24 hours.
                   </p>
                   <Button
                     onClick={() => setIsSubmitted(false)}
@@ -272,10 +276,10 @@ export function ContactContent() {
                     disabled={isSubmitting}
                   >
                     {isSubmitting ? (
-                      "Preparing..."
+                      "Sending..."
                     ) : (
                       <>
-                        Send via SMS
+                        Send Message
                         <Send className="w-4 h-4 ml-2" />
                       </>
                     )}

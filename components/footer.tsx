@@ -1,11 +1,13 @@
 import Link from "next/link"
-import { Phone, MapPin, Facebook, Instagram, ArrowRight } from "lucide-react"
+import { Phone, MapPin, Mail, Facebook, Instagram, ArrowRight } from "lucide-react"
 
 const quickLinks = [
   { href: "/", label: "Home" },
   { href: "/services", label: "Services" },
   { href: "/projects", label: "Projects" },
   { href: "/about", label: "About" },
+  { href: "/careers", label: "Careers" },
+  { href: "/handyman/register", label: "Join Network" },
   { href: "/contact", label: "Contact" },
 ]
 
@@ -126,6 +128,17 @@ export function Footer() {
               </li>
               <li>
                 <Link
+                  href="mailto:lupinprojectgroup@gmail.com"
+                  className="flex items-center gap-2 text-white/60 hover:text-white text-xs transition-colors group"
+                >
+                  <span className="flex items-center justify-center w-6 h-6 rounded-md bg-[#4F46E5]/20 group-hover:bg-[#4F46E5]/40 transition-colors shrink-0">
+                    <Mail className="w-3 h-3 text-[#A78BFA]" />
+                  </span>
+                  lupinprojectgroup@gmail.com
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="https://maps.google.com/?q=100+Consilium+Pl+Suite+200+Scarborough+ON+M1H+3E3"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -147,6 +160,8 @@ export function Footer() {
           <div className="flex items-center gap-4">
             <Link href="/privacy" className="hover:text-white/70 transition-colors">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-white/70 transition-colors">Terms of Service</Link>
+            <Link href="/admin/login" className="hover:text-white/70 transition-colors">Admin</Link>
+            <Link href="/handyman/login" className="hover:text-white/70 transition-colors">Handyman Login</Link>
           </div>
         </div>
       </div>

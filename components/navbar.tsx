@@ -12,6 +12,7 @@ const navLinks = [
   { href: "/services", label: "Services" },
   { href: "/projects", label: "Projects" },
   { href: "/about", label: "About" },
+  { href: "/careers", label: "Careers" },
   { href: "/contact", label: "Contact" },
 ]
 
@@ -79,21 +80,38 @@ export function Navbar() {
           </div>
 
           {/* Desktop CTA */}
-          <div className="hidden lg:flex items-center gap-3">
+          <div className="hidden lg:flex items-center gap-2">
+            <Button
+              asChild
+              variant="outline"
+              size="sm"
+              className="rounded-lg border-primary/30 text-primary hover:bg-primary/10 text-sm"
+            >
+              <Link href="/handyman/login">Member</Link>
+            </Button>
+            <Button
+              asChild
+              variant="outline"
+              size="sm"
+              className="rounded-lg border-primary/30 text-primary hover:bg-primary/10 text-sm"
+            >
+              <Link href="/admin/login">Admin</Link>
+            </Button>
             <Link
               href="tel:905-233-2100"
-              className="flex items-center gap-2 text-base font-semibold text-foreground hover:text-primary transition-colors"
+              className="flex items-center justify-center w-10 h-10 rounded-full gradient-primary hover:scale-110 transition-transform"
+              aria-label="Call us"
             >
-              <span className="flex items-center justify-center w-7 h-7 rounded-full gradient-primary">
-                <Phone className="w-3.5 h-3.5 text-white" />
-              </span>
-              905-233-2100
+              <Phone className="w-4 h-4 text-white" />
             </Link>
             <Button
               asChild
-              className="rounded-lg gradient-primary text-white font-bold shadow-md hover:scale-105 transition-transform text-base px-5 py-2"
+              className="rounded-lg gradient-primary text-white font-bold shadow-md hover:scale-105 transition-transform text-sm px-4 py-2"
             >
-              <Link href="/contact">Free Quote</Link>
+              <Link href="/contact" className="flex items-center gap-1.5">
+                <Phone className="w-3.5 h-3.5" />
+                Get Quote
+              </Link>
             </Button>
           </div>
 
@@ -154,6 +172,14 @@ export function Navbar() {
                   <Phone className="w-4 h-4 text-primary" />
                   905-233-2100
                 </Link>
+                <div className="grid grid-cols-2 gap-2">
+                  <Button asChild size="sm" variant="outline" className="rounded-lg border-primary/30 text-primary">
+                    <Link href="/handyman/login" onClick={() => setIsOpen(false)}>Member</Link>
+                  </Button>
+                  <Button asChild size="sm" variant="outline" className="rounded-lg border-primary/30 text-primary">
+                    <Link href="/admin/login" onClick={() => setIsOpen(false)}>Admin</Link>
+                  </Button>
+                </div>
                 <Button asChild size="sm" className="rounded-lg gradient-primary text-white font-bold w-full">
                   <Link href="/contact" onClick={() => setIsOpen(false)}>Get Free Quote</Link>
                 </Button>
