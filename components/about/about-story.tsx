@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 import { MapPin, Users, Shield, Building } from "lucide-react"
 
 const highlights = [
-  { icon: MapPin, label: "Local Business", value: "Scarborough-Based" },
+  { icon: MapPin, label: "Local Business", value: "GTA-Based" },
   { icon: Users, label: "Team Size", value: "15+ Professionals" },
   { icon: Shield, label: "Licensed", value: "Fully Insured" },
   { icon: Building, label: "Experience", value: "15+ Years" },
@@ -60,7 +60,7 @@ export function AboutStory() {
               transition={{ delay: 0.1 }}
               className="text-3xl lg:text-4xl font-bold text-foreground text-balance mb-6"
             >
-              Your Trusted Construction Partner in Scarborough
+              Your Trusted Construction & Handyman Partner in the GTA
             </motion.h2>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -70,13 +70,13 @@ export function AboutStory() {
               className="space-y-4 text-muted-foreground text-lg leading-relaxed"
             >
               <p>
-                Lupin Project Group is a trusted construction and handyman service provider based in Scarborough, Ontario. With over 15 years of experience, we have built our reputation on delivering quality craftsmanship, reliable service, and exceptional customer satisfaction.
+                Lupin Project Group is a trusted construction and handyman service provider based in the GTA. With over 15 years of experience, we have built our reputation on delivering quality craftsmanship, reliable service, and exceptional customer satisfaction.
               </p>
               <p>
                 Our team of skilled professionals is dedicated to handling both residential and commercial projects with the same level of care and attention to detail. From small repairs to large-scale renovations, we approach every job with professionalism and expertise.
               </p>
               <p>
-                As a local business, we take pride in serving our community and building lasting relationships with our clients. We understand the importance of trust when inviting someone into your home or business, which is why we prioritize transparency, communication, and respect in everything we do.
+                As a GTA-based business, we take pride in serving our community and building lasting relationships with our clients. We understand the importance of trust when inviting someone into your home or business, which is why we prioritize transparency, communication, and respect in everything we do.
               </p>
             </motion.div>
           </div>
