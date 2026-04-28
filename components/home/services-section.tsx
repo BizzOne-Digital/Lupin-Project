@@ -108,13 +108,13 @@ export function ServicesSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className={`group bg-background rounded-2xl overflow-hidden border-2 shadow-sm transition-all duration-300 ${
+              className={`group bg-background rounded-2xl overflow-hidden border-2 shadow-sm transition-all duration-300 relative ${
                 service.category === "construction"
                   ? "border-[#3B82F6]/20 card-glow-construction"
                   : "border-[#8B5CF6]/20 card-glow-handyman"
               }`}
             >
-              {/* Category Badge */}
+              {/* Service Badge */}
               <div className="absolute top-4 right-4 z-10">
                 <span
                   className={`px-3 py-1 rounded-full text-xs font-bold text-white shadow-lg ${
@@ -123,7 +123,7 @@ export function ServicesSection() {
                       : "gradient-handyman"
                   }`}
                 >
-                  {service.category === "construction" ? "CONSTRUCTION" : "HANDYMAN"}
+                  {service.title.replace(" Services", "").toUpperCase()}
                 </span>
               </div>
 

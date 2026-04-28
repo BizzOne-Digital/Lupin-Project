@@ -108,8 +108,7 @@ export function Navbar() {
               asChild
               className="rounded-lg gradient-primary text-white font-bold shadow-md hover:scale-105 transition-transform text-sm px-4 py-2"
             >
-              <Link href="/contact" className="flex items-center gap-1.5">
-                <Phone className="w-3.5 h-3.5" />
+              <Link href="/contact">
                 Get Quote
               </Link>
             </Button>
