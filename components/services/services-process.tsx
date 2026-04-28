@@ -69,19 +69,19 @@ export function ServicesProcess() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="relative"
+              className="relative flex"
             >
               {/* Connector Line (hidden on mobile and last item) */}
               {index < steps.length - 1 && (
                 <div className="hidden lg:block absolute top-10 left-[60%] w-full h-0.5 bg-border" />
               )}
 
-              <div className="bg-card p-6 lg:p-8 rounded-2xl border border-border shadow-sm relative z-10">
-                <div className="flex items-center justify-center w-16 h-16 bg-primary/10 rounded-xl mb-6">
+              <div className="bg-card p-6 lg:p-8 rounded-2xl border border-border shadow-sm relative z-10 flex flex-col w-full">
+                <div className="flex items-center justify-center w-16 h-16 bg-primary/10 rounded-xl mb-6 shrink-0">
                   <step.icon className="w-8 h-8 text-primary" />
                 </div>
                 <h3 className="text-xl font-semibold text-foreground mb-3">{step.title}</h3>
-                <p className="text-muted-foreground leading-relaxed">{step.description}</p>
+                <p className="text-muted-foreground leading-relaxed flex-1">{step.description}</p>
               </div>
             </motion.div>
           ))}

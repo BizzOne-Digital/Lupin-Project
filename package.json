@@ -57,7 +57,7 @@
     "next": "16.2.0",
     "next-auth": "^5.0.0-beta.31",
     "next-themes": "^0.4.6",
-    "nodemailer": "^8.0.7",
+    "nodemailer": "^7.0.7",
     "prisma": "^6.19.3",
     "react": "^19",
     "react-day-picker": "9.13.2",
@@ -73,7 +73,7 @@
   "devDependencies": {
     "@tailwindcss/postcss": "^4.2.0",
     "@types/node": "^22",
-    "@types/nodemailer": "^8.0.0",
+    "@types/nodemailer": "^7.0.0",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "postcss": "^8.5",
