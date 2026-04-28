@@ -38,7 +38,7 @@ export function AboutHero() {
             transition={{ delay: 0.2 }}
             className="mt-6 text-lg md:text-xl text-white/80"
           >
-            Lupin Project Group is your trusted partner for professional construction and handyman services in Scarborough and surrounding areas.
+            Lupin Project Group is your trusted partner for professional construction and handyman services throughout the GTA.
           </motion.p>
         </div>
       </div>

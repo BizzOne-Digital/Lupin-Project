@@ -84,7 +84,7 @@ export function CareersContent() {
               Join Our <span className="gradient-text">Team</span>
             </h2>
             <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
-              We&apos;re always looking for hardworking laborers and skilled tradespeople to grow with us. If you take pride in your work and want steady employment across the GTA, we want to hear from you.
+              We're always looking for hardworking laborers and skilled tradespeople to grow with us. If you take pride in your work and want steady employment across the GTA, we want to hear from you.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
@@ -139,7 +139,7 @@ export function CareersContent() {
                 Submit Your <span className="gradient-text">Application</span>
               </h2>
               <p className="text-muted-foreground text-sm mb-6">
-                Fill out the form below and attach your resume. We&apos;ll be in touch.
+                Fill out the form below and attach your resume. We'll be in touch.
               </p>
 
               {isSubmitted ? (
@@ -153,7 +153,7 @@ export function CareersContent() {
                   </div>
                   <h3 className="text-xl font-semibold text-foreground mb-2">Application Sent!</h3>
                   <p className="text-muted-foreground text-sm">
-                    Thanks for applying. We&apos;ll review your application and reach out soon.
+                    Thanks for applying. We'll review your application and reach out soon.
                   </p>
                   <Button onClick={() => setIsSubmitted(false)} variant="outline" className="mt-6 rounded-xl">
                     Submit Another

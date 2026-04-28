@@ -14,7 +14,7 @@ export function CareersHero() {
           className="inline-flex items-center gap-2 px-4 py-1.5 gradient-primary text-white rounded-full text-sm font-semibold mb-6"
         >
           <HardHat className="w-4 h-4" />
-          We&apos;re Hiring
+          We're Hiring
         </motion.div>
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
@@ -31,7 +31,7 @@ export function CareersHero() {
           transition={{ delay: 0.2 }}
           className="text-white/70 text-lg max-w-2xl mx-auto"
         >
-          We&apos;re looking for dedicated laborers and skilled tradespeople to join our growing team across the GTA.
+          We're looking for dedicated laborers and skilled tradespeople to join our growing team across the GTA.
         </motion.p>
       </div>
     </section>

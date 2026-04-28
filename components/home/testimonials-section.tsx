@@ -60,7 +60,7 @@ export function TestimonialsSection() {
             transition={{ delay: 0.2 }}
             className="mt-4 text-muted-foreground text-lg"
           >
-            Don&apos;t just take our word for it. Hear from our satisfied customers.
+            Don't just take our word for it. Hear from our satisfied customers.
           </motion.p>
         </div>
 

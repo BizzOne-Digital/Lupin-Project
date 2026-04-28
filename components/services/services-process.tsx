@@ -7,12 +7,12 @@ const steps = [
   {
     icon: Phone,
     title: "1. Contact Us",
-    description: "Reach out to discuss your project needs. We&apos;re available by phone, email, or through our contact form.",
+    description: "Reach out to discuss your project needs. We're available by phone, email, or through our contact form.",
   },
   {
     icon: FileText,
     title: "2. Free Consultation",
-    description: "We&apos;ll assess your project, discuss your vision, and provide a detailed, transparent quote.",
+    description: "We'll assess your project, discuss your vision, and provide a detailed, transparent quote.",
   },
   {
     icon: Hammer,

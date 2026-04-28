@@ -93,7 +93,7 @@ export function ContactContent() {
               Contact <span className="gradient-text">Information</span>
             </h2>
             <p className="text-muted-foreground text-lg mb-8">
-              We&apos;d love to hear from you. Reach out to us through any of the channels below or fill out the contact form.
+              We'd love to hear from you. Reach out to us through any of the channels below or fill out the contact form.
             </p>
 
             <div className="space-y-6">
@@ -160,7 +160,7 @@ export function ContactContent() {
                 Get a <span className="gradient-text">Free Quote</span>
               </h2>
               <p className="text-muted-foreground mb-8">
-                Fill out the form below and we&apos;ll get back to you within 24 hours.
+                Fill out the form below and we'll get back to you within 24 hours.
               </p>
 
               {isSubmitted ? (

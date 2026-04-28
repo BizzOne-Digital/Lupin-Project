@@ -38,7 +38,7 @@ export function ContactHero() {
             transition={{ delay: 0.2 }}
             className="mt-6 text-lg md:text-xl text-white/80"
           >
-            Ready to start your project? Contact us today for a free consultation and quote. We&apos;re here to help bring your vision to life.
+            Ready to start your project? Contact us today for a free consultation and quote. We're here to help bring your vision to life.
           </motion.p>
         </div>
       </div>

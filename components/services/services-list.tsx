@@ -139,7 +139,7 @@ export function ServicesList() {
             >
               {/* Image */}
               <div className="relative rounded-2xl overflow-hidden shadow-xl group">
-                {/* Category Badge */}
+                {/* Service Name Badge */}
                 <div className="absolute top-4 right-4 z-10">
                   <span
                     className={`px-4 py-2 rounded-full text-xs font-bold text-white shadow-lg ${
@@ -148,7 +148,7 @@ export function ServicesList() {
                         : "gradient-handyman"
                     }`}
                   >
-                    {service.category === "construction" ? "CONSTRUCTION" : "HANDYMAN"}
+                    {service.title.replace(" Services", "").toUpperCase()}
                   </span>
                 </div>
                 

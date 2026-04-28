@@ -27,7 +27,7 @@ const features = [
   {
     icon: ThumbsUp,
     title: "Customer Satisfaction",
-    description: "Your satisfaction is our priority. We work until you&apos;re completely happy.",
+    description: "Your satisfaction is our priority. We work until you're completely happy.",
   },
 ]
 
